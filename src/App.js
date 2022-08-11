@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from'./compnents/navbar.js'
+import Reserver from'./compnents/reservation.js'
+import ControllerCarousel from'./compnents/slider.js'
+import FooterController from'./compnents/footer.js'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+    return ( 
+        <div>
+            <Header/>
+            <ControllerCarousel/>
+            <Reserver/>
+            <br></br>
+            <FooterController/>
+        </div>
+    );
+} ;
 export default App;
